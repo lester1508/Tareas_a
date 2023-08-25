@@ -1,0 +1,57 @@
+
+Algoritmos y estruturas de datos seccion 1900
+Ing. Jose Avila
+Lester Jhoan Dominguez Chavez
+20211020385
+
+
+1.Definir un ADT para manejar cadenas de caracteres.
+ Establezca las operaciones típicas que pueden establecerse en una cadena.
+
+
+1. Creación de una cadena: Esta operación permite crear una cadena de caracteres vacía o inicializarla con un valor predeterminado.
+
+2. Concatenación: Permite combinar dos o más cadenas para formar una cadena más larga. 
+Por ejemplo si tenemos las cadenas "Hola" y "Mundo la concatenación nos daría "Hola Mundo".
+
+3. Acceso a caracteres: Esta operación permite acceder a un carácter específico dentro de una cadena. 
+Por ejemplo si tenemos la cadena "Ejemplo podemos acceder al carácter en la posición 3 para obtener la letra 'e'.
+
+4. Comparación: Permite comparar dos cadenas para determinar si son iguales o si una es mayor o menor que la otra en función de su orden lexicográfico.
+ Esto es útil para clasificar cadenas o realizar búsquedas.
+
+5. Subcadena: Permite extraer una parte de una cadena original. 
+Por ejemplo si tenemos la cadena "Hola Mundo podemos obtener la subcadena "Mundo" al eliminar los primeros cinco caracteres.
+
+6. Longitud: Esta operación devuelve la cantidad de caracteres presentes en una cadena.
+
+7. Modificación: Permite modificar un carácter específico dentro de una cadena.
+
+
+
+
+2.Definir un ADT para arreglos bidimensionales de enteros. 
+Especificar las operaciones básicas que pueden ser definidos en este tipo de estructuras. 
+Lo siguiente es imaginar una aplicación que almacene un arreglo de 1000x 1000 donde menos de 10,000 registros son valores distintos de cero 
+(esto indica menos del 10% de valores). 
+Indique al menos una forma de mejorar el uso de espacio eficiente para un arreglo de dos dimensiones con un millón de elementos.
+
+- Insertar fila: agrega una nueva fila al arreglo en una posición específica.
+- Insertar columna: agrega una nueva columna al arreglo en una posición específica.
+- Eliminar fila: elimina una fila del arreglo en una posición específica.
+- Eliminar columna: elimina una columna del arreglo en una posición específica.
+- Obtener número de filas: devuelve el número total de filas en el arreglo.
+- Obtener número de columnas: devuelve el número total de columnas en el arreglo.
+- Verificar si el arreglo está vacío: devuelve un valor booleano que indica si el arreglo no contiene ningún elemento.
+
+El ADT para arreglos bidimensionales de enteros podría ser el siguiente:
+
+1. Crear una matriz bidimensional: Crea una matriz bidimensional de tamaño MxN con todos los elementos inicializados en cero.
+2. Obtener el valor de un elemento: Dado un par de índices valor del elemento en esa posición en la matriz.
+3. Actualizar el valor de un elemento: Dado un par de índices (i j) y un valor entero actualiza el elemento en esa posición de la matriz con el nuevo valor.
+4. Obtener el tamaño de la matriz: Devuelve las dimensiones MxN de la matriz.
+5. Contar elementos no cero: Devuelve la cantidad de elementos distintos de cero presentes en la matriz.
+
+para mejorar el uso eficiente de espacio en un arreglo bidimensional con un millón de elementos donde menos del 10% son distintos de cero se puede utilizar,
+una estructura de datos esparsa como una matriz dispersa que solo almacene los elementos no cero y sus índices correspondientes.
+Esto permitirá ahorrar espacio y facilitará el acceso a los elementos no cero en tiempo constante
