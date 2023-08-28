@@ -22,4 +22,10 @@ public class DLinkedListTest {
 
         list.displayList();
     }
+     @Test
+    void tesprimernodo(){
+
+        lista.append(10);
+
+    }
 }
